@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  chrome:
+    build:
+      context: ./chrome
+      dockerfile: Dockerfile
+    container_name: chrome
+    ports:
+      - "8000:8000"
